@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #eee;
+        }
+        header{
+            height: 100px;
+            background-color: black;
+        }
+        main{
+            width: 800px;
+            margin: 10px auto;
+        }
+        main > div{
+            margin-bottom: 10px;
+        }
+        .box1{
+            height: 200px;
+            background-color: #fff;
+        }
+    </style>
+    <header></header>
+    <main>
+        <div class="box1"></div>
+        <!-- gap방식 -->
+        <style>
+            .box2{
+                display: flex;
+                gap: 10px;
+            }
+            .box2 div{
+                flex: 1;
+                background-color: #fff;
+                height: 200px;
+            
+            }
+        </style>
+        <div class="box2">
+            <div>1</div>
+            <div></div>
+        </div>
+        <!-- 올빼미방식 -->
+        <style>
+            .box3{
+                display: flex;
+                
+            }
+            .box3 > * + *{
+                flex: 1;
+                height: 100px;
+                background: #fff;
+                margin-left: 10px;
+            }
+            .box3 div{}
+        </style>
+        <div class="box3">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <!-- 스페이스비트윈방식 -->
+        <style>
+            .box4{}
+            .box4 div{
+                display: flex;
+                justify-content: space-between;
+                background-color: red;
+                padding: 10px;
+            }
+            .box4 div{
+                height: 100px;
+                background-color: white;
+            }
+
+        </style>
+        
+        <div class="box4">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </main>
+</body>
+</html>

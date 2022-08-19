@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        ul{list-style: none;}
+        .list1{
+            display: flex;
+            
+        }
+        .list1 li{
+            width: 300px;height: 100px;
+            background-color: red;
+            margin-right: 10px;
+            flex-grow: 1;
+        }
+        /* .list1 li:last-child{
+            flex-grow: 2;
+        } */
+    </style>
+    <div class="box">
+        <h2>flex-grow</h2>
+        <p>증가의 비율</p>
+        
+        <ul class="list1">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div>
+    <style>
+        .list2{
+            display: flex;
+        }
+        .list2 li{
+            width: 300px;
+            height: 100px;
+            background-color: red;
+            margin-right: 10px;
+            flex-shrink: 1;
+
+        }
+        .list2 li:last-child{
+            flex-shrink: 2;
+        }
+    </style>
+    <div class="box">
+        <h2>flex-shrink</h2>
+        <p>수축의 비율</p>
+        
+        <ul class="list2">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div>
+    <style>
+        .list3{}
+        .list3 li{
+            height: 100px;
+            background-color: red;
+            flex-basis: 300px;
+            margin-right: 10px;
+        }
+        .list3 li:last-child{}
+    </style>
+    <div class="box3">
+        <h2>flex-basis</h2>
+        <p>중심축의 기본값</p>
+        
+        <ul class="list3">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+        <style>
+            .list4{}
+            .list4 li{
+                flex: 1 0 500;
+                height: 100px;
+                background-color: blue;
+                margin-right: 10px;
+            }
+            .list4 li:last-child{}
+        </style>
+        <div class="box">
+            <h2>flex:grow shink basis</h2>
+            <p>주로 flex:1 자주쓰임  - flex-grow:1;, width:100% 같은말</p>
+            
+            <ul class="list4">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

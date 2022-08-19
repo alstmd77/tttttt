@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <style>
+        *{margin: 0;
+        padding: 0;}
+        body{
+            line-height: 1;
+        }
+        ul{list-style: none;}
+        a{
+            text-decoration: none;
+            color: inheit;
+        }
+        img{
+            max-width: 100%;
+            vertical-align: top;
+        }
+        header{
+            position: relative;
+            height: 300px;
+            background-color: tomato;
+            display: flex;
+            justify-content: space-between;
+        }
+        header h1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+        }
+    </style>
+    <header>
+        <h1><a href="">nike</a></h1>
+        <div class="sns">sns</div>
+        <div class="login">login</div>
+    </header>
+    <style>
+        .box1{
+            position: relative;
+            height: 300px;
+            background-color: #888;
+        }
+        .box1 .page{
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+        }
+        .box1 .page span{
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .box1 .page span.active{
+            background-color: white;
+        }
+        
+    </style>
+    <main>
+        <section class="box1">
+            <a href="" class="btn prev">prev</a>
+            <a href="" class="btn next">next</a>
+            <div class="page">
+                <span class="active">1</span>
+                <span>2</span>
+                <span>3</span>
+            </div>
+        </section>
+        <style>
+            .box2{
+                padding: 100px 0;
+            }
+            .box2 h2{
+                font-size: 50px;
+                font-weight: 700;
+                margin-bottom: 50px;
+                text-align: center;
+            }
+            .box2 ul{
+                width: 800px;
+                margin: 0 auto;
+                display: flex;
+                gap: 10px;
+            }
+            .box2 ul li{
+                flex: 1;
+            }
+            .box2 ul li a{
+                display: block;
+                padding: 10px;
+                background-color: red;
+            }
+            .box2 ul li img{
+                width: 100%;
+            }
+            .box2 ul li p{
+                padding: 10px;
+                background-color: white;
+                margin-top: 10px;
+            }
+        </style>
+        <section class="box2">
+            <h2>이벤트</h2>
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="https://s.pstatic.net/static/newsstand/2022/0819/article_img/new_main/9090/110557_001.jpeg" alt="" class="">
+                        <p>박은빈</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="https://s.pstatic.net/static/newsstand/2022/0819/article_img/new_main/9090/110557_001.jpeg" alt="" class="">
+                        <p>박은빈</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="https://s.pstatic.net/static/newsstand/2022/0819/article_img/new_main/9090/110557_001.jpeg" alt="" class="">
+                        <p>박은빈</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="https://s.pstatic.net/static/newsstand/2022/0819/article_img/new_main/9090/110557_001.jpeg" alt="" class="">
+                        <p>박은빈</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <style>
+            .box3{
+                padding: 100px 0;
+                background-color: #ccc;
+            }
+            .box3 ul{
+                width: 800px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+            }
+            .box3 ul li{
+                flex-basis: 100px;
+                color: red;
+            }
+        </style>
+        <seciton class="box3">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </seciton>
+    </main>
+</body>
+</html>
